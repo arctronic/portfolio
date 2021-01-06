@@ -23,8 +23,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.second-banner {
+    background-image: url(img/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
 section {
     height: 500px;
+    padding-bottom: 50px;
 }
 
 .link-button {
@@ -39,4 +46,81 @@ section {
 .link-button:hover {
     /* color: blue; */
     background-image: linear-gradient(yellow, orange);
+}
+
+p {
+    color: dimgrey;
+}
+
+.single-experience {
+    box-shadow: 10px 10px 30px grey;
+    border-radius: 10px;
+    height: 50%;
+    background-color: white;
+}
+
+.experience-area {
+    background-image: url("img/exp-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y: 20%;
+}
+
+#full-stack {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightSalmon, tomato);
+    border-image-slice: 1;
+}
+
+#coding {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, blue, skyBlue);
+    border-image-slice: 1;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    margin: auto;
+    background-color: #002a38;
+    line-height: 2;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.footer ul {
+    display: inline-flex;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    list-style: none;
+}
+
+.footer li:last-child {
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+}
+
+.footer li {
+    position: relative;
+}
+
+.footer li:hover {
+    background-color: white;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+@media (min-width: 500px) {
+    ul {
+        grid-auto-flow: column;
+    }
 }
